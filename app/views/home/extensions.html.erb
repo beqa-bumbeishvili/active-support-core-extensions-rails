@@ -1,0 +1,6 @@
+<% @conditions_array.each do |item| %>
+
+    <p> <text style="font-weight: bold;">"<%= item[:value] %>"</text>.<%= item[:function] %> => <text style="font-weight: bold; color:orange;"><%= item[:condition] %></text> </p>
+
+<% end %>
+
