@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  include First
+  #include First
 
   def index
 
@@ -51,7 +51,4 @@ class HomeController < ApplicationController
   end
 
 end
-
-
-#can't be used in cycle: try,
 
