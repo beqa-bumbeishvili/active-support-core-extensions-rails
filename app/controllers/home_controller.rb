@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+  include First
 
   def index
 
@@ -16,6 +17,7 @@ class HomeController < ApplicationController
     using_next = nil.try(:next)
     emp_name_age = Employee.first.try{ |emp| "#{emp.name} #{emp.age}" }
     using_in = 25.in?(20..50)
+    modules = First::Second::Third.parent_name
     instance_values = Employee.new.instance_values
     instance_variable_names = Employee.new.instance_variable_names
     name = SubUser.name
