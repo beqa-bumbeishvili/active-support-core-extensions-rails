@@ -13,7 +13,13 @@
 !/log/.keep
 !/tmp/.keep
 
+<<<<<<< HEAD
 /node_modules
 /yarn-error.log
 
 .byebug_history
+=======
+# Ignore Byebug command history file.
+.idea
+.generators
+.idea/*
